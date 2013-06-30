@@ -1,7 +1,10 @@
 Events::Application.routes.draw do
-  get "pages/home"
+ # get "pages/home", as: "home"
 
-  get "pages/contact"
+  match '/contact', to: 'pages#contact'
+
+  match '/show', to: 'events#show'
+
 
   resources :organizers
 
@@ -10,6 +13,8 @@ Events::Application.routes.draw do
 
 
   resources :events
+
+  root to: 'pages#home'
 
 
   # The priority is based upon order of creation:
