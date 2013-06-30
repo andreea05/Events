@@ -2,14 +2,32 @@
 <html>
 <head>
   <title>Events</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= render partial: 'shared/meniu' %>
-<%= yield %>
+  <link href="stylesheets/boostrap.css" rel="stylesheet" type="text/css">
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body>
+	<div>
+			<%= render partial: 'shared/meniu' %>
+	</div>
+	<div class="container">
+			<div class="row content">
+				<div class="span12">
+					<%= yield %>
+				</div>
+			</div>
+</div>
+
+<div id="footer">
+	
+	<%= render partial: 'shared/footer' %>
+</div>
 
 </body>
 </html>

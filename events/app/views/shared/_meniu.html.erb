@@ -1,13 +1,17 @@
-<div class="meniu">
-	<ul>
+<div class="menu">
+	<ul class="text-center">
 		<li>
-			<% link_to 'Home', root_path %>
+			<%= link_to "Home", root_path %>
 		</li>
 		<li>
-			<a href="#">Events</a>
+			<%= link_to "Events", show_path %>
 		</li>
-		<li><a href="#">Multimedia</a></li>
-		<li><a href="#">Contact</a></li>
+		<li>
+			<%= link_to "Multimedia", '#' %>
+		</li>
+		<li>
+			<%= link_to "Contact", contact_path %>
+		</li>
 
 	</ul>
 
