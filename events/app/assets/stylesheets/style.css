@@ -1,7 +1,69 @@
-div.meniu{
+body{
+	background-color:#E8E8E8;
+}
+
+div.menu{
+	margin: 0;
+	height: 40px;
+	background-color: black;
+}
+
+div ul li{
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
 
 }
 
-meniu ul{
-	
+div ul{
+	word-spacing: 10px;
+	color: white;
 }
+
+a{
+	line-height: 20px;
+	font-family: Calibri;
+	color: #989898;
+}
+ a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.content{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: white;
+	height: 470px;
+	box-shadow:  10px 10px 5px #888;
+}
+
+h1{
+	text-align: center;
+}
+
+#footer{
+	margin: 0;
+	height: 50px;
+	background-color: black;
+	color: white;
+
+}
+
+
+
+#link{
+	float: right;
+	font-size: 18px;
+}
+
+#left{
+	float:left;
+}
+
+#right{
+	float:right;
+}
+
+
